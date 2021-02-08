@@ -11,5 +11,8 @@
   <h2><?= date('Y-m-d H:i:s') ?></h2>
   <h1>Zona horaraia</h1>
   <h2><?= date_default_timezone_get() ?></h2>
+  <?php date_default_timezone_set('America/Monterrey') ?>
+  <h1>Fecha en <?= date_default_timezone_get() ?></h1>
+  <h2><?= date('Y-m-d H:i:s') ?></h2>
 </body>
 </html>
